@@ -1583,7 +1583,12 @@ export class EventSetupComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
+    private sanitizer: DomSanitizer,
   ) {}
+
+  getSafeHtml(html: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
 
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
