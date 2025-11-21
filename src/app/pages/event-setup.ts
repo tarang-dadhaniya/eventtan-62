@@ -969,7 +969,9 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
                 </h3>
 
                 <!-- Features Grid -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-4 md:gap-6 mb-6">
+                <div
+                  class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-4 md:gap-6 mb-6"
+                >
                   <!-- Schedule - Active -->
                   <div
                     draggable="true"
@@ -1113,7 +1115,7 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
                     class="relative w-full rounded border-2 border-dashed transition-colors"
                     [ngClass]="{
                       'border-[#CED4DA] bg-white': !isDragOverSelected,
-                      'border-[#049AD0] bg-[#E8F4F8]': isDragOverSelected
+                      'border-[#049AD0] bg-[#E8F4F8]': isDragOverSelected,
                     }"
                     style="min-height: 309px;"
                     (dragover)="onDragOverSelected($event)"
@@ -1135,7 +1137,9 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
                         (dragend)="onDragEnd($event)"
                         class="flex flex-col items-center gap-2 p-4 w-[120px] h-[120px] rounded border border-[#049AD0] shadow-[0_4px_15px_rgba(30,30,45,0.05)] bg-white transition-all hover:shadow-md cursor-move"
                       >
-                        <div class="relative w-full flex-1 flex items-center justify-center">
+                        <div
+                          class="relative w-full flex-1 flex items-center justify-center"
+                        >
                           <svg
                             class="w-8 h-8"
                             viewBox="0 0 32 32"
@@ -1147,20 +1151,62 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
                               d="M28.25 2.5H26.75V0H24.25V2.5H7.75V0H5.25V2.5H3.75C1.68225 2.5 0 4.18225 0 6.25V28.25C0 30.3177 1.68225 32 3.75 32H28.25C30.3177 32 32 30.3177 32 28.25V6.25C32 4.18225 30.3177 2.5 28.25 2.5ZM29.5 28.25C29.5 28.9393 28.9393 29.5 28.25 29.5H3.75C3.06075 29.5 2.5 28.9393 2.5 28.25V11.75H29.5V28.25ZM29.5 9.25H2.5V6.25C2.5 5.56075 3.06075 5 3.75 5H5.25V7.5H7.75V5H24.25V7.5H26.75V5H28.25C28.9393 5 29.5 5.56075 29.5 6.25V9.25Z"
                               fill="#049AD0"
                             />
-                            <path d="M7.25 14.375H4.75V16.875H7.25V14.375Z" fill="#049AD0"/>
-                            <path d="M12.25 14.375H9.75V16.875H12.25V14.375Z" fill="#049AD0"/>
-                            <path d="M17.25 14.375H14.75V16.875H17.25V14.375Z" fill="#049AD0"/>
-                            <path d="M22.25 14.375H19.75V16.875H22.25V14.375Z" fill="#049AD0"/>
-                            <path d="M27.25 14.375H24.75V16.875H27.25V14.375Z" fill="#049AD0"/>
-                            <path d="M7.25 19.375H4.75V21.875H7.25V19.375Z" fill="#049AD0"/>
-                            <path d="M12.25 19.375H9.75V21.875H12.25V19.375Z" fill="#049AD0"/>
-                            <path d="M17.25 19.375H14.75V21.875H17.25V19.375Z" fill="#049AD0"/>
-                            <path d="M22.25 19.375H19.75V21.875H22.25V19.375Z" fill="#049AD0"/>
-                            <path d="M7.25 24.375H4.75V26.875H7.25V24.375Z" fill="#049AD0"/>
-                            <path d="M12.25 24.375H9.75V26.875H12.25V24.375Z" fill="#049AD0"/>
-                            <path d="M17.25 24.375H14.75V26.875H17.25V24.375Z" fill="#049AD0"/>
-                            <path d="M22.25 24.375H19.75V26.875H22.25V24.375Z" fill="#049AD0"/>
-                            <path d="M27.25 19.375H24.75V21.875H27.25V19.375Z" fill="#049AD0"/>
+                            <path
+                              d="M7.25 14.375H4.75V16.875H7.25V14.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M12.25 14.375H9.75V16.875H12.25V14.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M17.25 14.375H14.75V16.875H17.25V14.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M22.25 14.375H19.75V16.875H22.25V14.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M27.25 14.375H24.75V16.875H27.25V14.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M7.25 19.375H4.75V21.875H7.25V19.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M12.25 19.375H9.75V21.875H12.25V19.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M17.25 19.375H14.75V21.875H17.25V19.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M22.25 19.375H19.75V21.875H22.25V19.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M7.25 24.375H4.75V26.875H7.25V24.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M12.25 24.375H9.75V26.875H12.25V24.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M17.25 24.375H14.75V26.875H17.25V24.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M22.25 24.375H19.75V26.875H22.25V24.375Z"
+                              fill="#049AD0"
+                            />
+                            <path
+                              d="M27.25 19.375H24.75V21.875H27.25V19.375Z"
+                              fill="#049AD0"
+                            />
                           </svg>
                           <button
                             class="absolute -top-2 -right-2 p-1"
@@ -1259,7 +1305,9 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
                           stroke-linejoin="round"
                         />
                       </svg>
-                      <span class="text-[#878A99] text-lg font-semibold whitespace-nowrap">
+                      <span
+                        class="text-[#878A99] text-lg font-semibold whitespace-nowrap"
+                      >
                         Drag to add & sort features
                       </span>
                     </div>
@@ -1697,7 +1745,10 @@ export class EventSetupComponent implements OnInit {
 
   onDragLeaveSelected(event: DragEvent) {
     const target = event.currentTarget as HTMLElement;
-    if (event.relatedTarget === null || !target.contains(event.relatedTarget as Node)) {
+    if (
+      event.relatedTarget === null ||
+      !target.contains(event.relatedTarget as Node)
+    ) {
       this.isDragOverSelected = false;
     }
   }
@@ -1734,8 +1785,7 @@ export class EventSetupComponent implements OnInit {
     }
   }
 
-  onDragLeave(event: DragEvent) {
-  }
+  onDragLeave(event: DragEvent) {}
 
   onDrop(event: DragEvent) {
     event.preventDefault();
