@@ -174,33 +174,6 @@ import { FormsModule } from "@angular/forms";
                     placeholder="Select Time"
                     class="w-full h-[50px] px-5 pr-[58px] border-2 border-[#E9EBEC] rounded placeholder:text-[#C2C3CB] text-base focus:outline-none focus:border-[#009FD8] transition-colors"
                   />
-                  <div
-                    class="absolute right-0 top-0 h-[50px] w-[50px] bg-[#E9EBEC] rounded-r flex items-center justify-center pointer-events-none"
-                  >
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_clock)">
-                        <path
-                          d="M11 0C4.94317 0 0 4.94351 0 11C0 17.0568 4.94351 22 11 22C17.0568 22 22 17.0564 22 11C22 4.94317 17.0565 0 11 0ZM11 20.7109C5.64536 20.7109 1.28906 16.3546 1.28906 11C1.28906 5.64536 5.64536 1.28906 11 1.28906C16.3546 1.28906 20.7109 5.64536 20.7109 11C20.7109 16.3546 16.3546 20.7109 11 20.7109Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M11.6445 10.733V7.13281C11.6445 6.77686 11.356 6.48828 11 6.48828C10.644 6.48828 10.3555 6.77686 10.3555 7.13281V11C10.3555 11.1709 10.4234 11.3349 10.5443 11.4558L14.4115 15.323C14.6631 15.5746 15.0712 15.5747 15.323 15.323C15.5747 15.0712 15.5747 14.6632 15.323 14.4115L11.6445 10.733Z"
-                          fill="#434349"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_clock">
-                          <rect width="22" height="22" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
                 </div>
               </div>
 
