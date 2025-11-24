@@ -458,6 +458,7 @@ export class EventDashboardComponent implements OnInit {
     switch (page) {
       case "dashboard":
         this.activeRoute = "/event/dashboard";
+        this.router.navigate([`/event/${eventId}/dashboard`]);
         break;
       case "setup":
         this.activeRoute = "/event/setup";
