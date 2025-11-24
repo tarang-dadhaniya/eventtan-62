@@ -77,85 +77,6 @@ import { FormsModule } from "@angular/forms";
                     placeholder="Select Date"
                     class="w-full h-[50px] px-5 pr-[58px] border-2 border-[#E9EBEC] rounded placeholder:text-[#C2C3CB] text-base focus:outline-none focus:border-[#009FD8] transition-colors"
                   />
-                  <div
-                    class="absolute right-0 top-0 h-[50px] w-[50px] bg-[#E9EBEC] rounded-r flex items-center justify-center pointer-events-none"
-                  >
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_calendar)">
-                        <path
-                          d="M19.4219 1.71875H18.3906V0H16.6719V1.71875H5.32812V0H3.60938V1.71875H2.57812C1.15655 1.71875 0 2.8753 0 4.29688V19.4219C0 20.8435 1.15655 22 2.57812 22H19.4219C20.8435 22 22 20.8435 22 19.4219V4.29688C22 2.8753 20.8435 1.71875 19.4219 1.71875ZM20.2812 19.4219C20.2812 19.8957 19.8957 20.2812 19.4219 20.2812H2.57812C2.10427 20.2812 1.71875 19.8957 1.71875 19.4219V8.07812H20.2812V19.4219ZM20.2812 6.35938H1.71875V4.29688C1.71875 3.82302 2.10427 3.4375 2.57812 3.4375H3.60938V5.15625H5.32812V3.4375H16.6719V5.15625H18.3906V3.4375H19.4219C19.8957 3.4375 20.2812 3.82302 20.2812 4.29688V6.35938Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M4.98438 9.88281H3.26562V11.6016H4.98438V9.88281Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M8.42188 9.88281H6.70312V11.6016H8.42188V9.88281Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M11.8594 9.88281H10.1406V11.6016H11.8594V9.88281Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M15.2969 9.88281H13.5781V11.6016H15.2969V9.88281Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M18.7344 9.88281H17.0156V11.6016H18.7344V9.88281Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M4.98438 13.3203H3.26562V15.0391H4.98438V13.3203Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M8.42188 13.3203H6.70312V15.0391H8.42188V13.3203Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M11.8594 13.3203H10.1406V15.0391H11.8594V13.3203Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M15.2969 13.3203H13.5781V15.0391H15.2969V13.3203Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M4.98438 16.7578H3.26562V18.4766H4.98438V16.7578Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M8.42188 16.7578H6.70312V18.4766H8.42188V16.7578Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M11.8594 16.7578H10.1406V18.4766H11.8594V16.7578Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M15.2969 16.7578H13.5781V18.4766H15.2969V16.7578Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M18.7344 13.3203H17.0156V15.0391H18.7344V13.3203Z"
-                          fill="#434349"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_calendar">
-                          <rect width="22" height="22" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
                 </div>
               </div>
             </div>
@@ -189,33 +110,6 @@ import { FormsModule } from "@angular/forms";
                     placeholder="Select Time"
                     class="w-full h-[50px] px-5 pr-[58px] border-2 border-[#E9EBEC] rounded placeholder:text-[#C2C3CB] text-base focus:outline-none focus:border-[#009FD8] transition-colors"
                   />
-                  <div
-                    class="absolute right-0 top-0 h-[50px] w-[50px] bg-[#E9EBEC] rounded-r flex items-center justify-center pointer-events-none"
-                  >
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_clock2)">
-                        <path
-                          d="M11 0C4.94317 0 0 4.94351 0 11C0 17.0568 4.94351 22 11 22C17.0568 22 22 17.0564 22 11C22 4.94317 17.0565 0 11 0ZM11 20.7109C5.64536 20.7109 1.28906 16.3546 1.28906 11C1.28906 5.64536 5.64536 1.28906 11 1.28906C16.3546 1.28906 20.7109 5.64536 20.7109 11C20.7109 16.3546 16.3546 20.7109 11 20.7109Z"
-                          fill="#434349"
-                        />
-                        <path
-                          d="M11.6445 10.733V7.13281C11.6445 6.77686 11.356 6.48828 11 6.48828C10.644 6.48828 10.3555 6.77686 10.3555 7.13281V11C10.3555 11.1709 10.4234 11.3349 10.5443 11.4558L14.4115 15.323C14.6631 15.5746 15.0712 15.5747 15.323 15.323C15.5747 15.0712 15.5747 14.6632 15.323 14.4115L11.6445 10.733Z"
-                          fill="#434349"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_clock2">
-                          <rect width="22" height="22" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
                 </div>
               </div>
             </div>
