@@ -1461,30 +1461,6 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
       .feature-active span {
         color: white !important;
       }
-
-      .active-feature-tab svg path,
-      .active-feature-tab svg circle,
-      .active-feature-tab svg g path,
-      .active-feature-tab svg g circle {
-        fill: white !important;
-        stroke: white !important;
-      }
-
-      button:not(.active-feature-tab) svg path,
-      button:not(.active-feature-tab) svg circle,
-      button:not(.active-feature-tab) svg g path,
-      button:not(.active-feature-tab) svg g circle {
-        fill: #686868 !important;
-        stroke: #686868 !important;
-      }
-
-      button:not(.active-feature-tab):hover svg path,
-      button:not(.active-feature-tab):hover svg circle,
-      button:not(.active-feature-tab):hover svg g path,
-      button:not(.active-feature-tab):hover svg g circle {
-        fill: #049ad0 !important;
-        stroke: #049ad0 !important;
-      }
     `,
   ],
 })
