@@ -1463,13 +1463,18 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
       }
 
       .active-feature-tab {
-        background-color: #009fd8 !important;
-        color: white !important;
-        border-color: #009fd8 !important;
+        border-bottom-color: #009fd8 !important;
+        background-color: #F0F7FB !important;
       }
 
-      .active-feature-tab svg path {
-        fill: white !important;
+      .active-feature-tab div {
+        color: #009fd8;
+      }
+
+      .active-feature-tab svg path,
+      .active-feature-tab svg circle {
+        fill: #009fd8 !important;
+        stroke: #009fd8 !important;
       }
     `,
   ],
