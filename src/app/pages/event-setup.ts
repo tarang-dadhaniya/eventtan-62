@@ -2066,4 +2066,17 @@ export class EventSetupComponent implements OnInit {
     event.preventDefault();
     event.stopPropagation();
   }
+
+  openScheduleModal() {
+    this.isScheduleModalOpen = true;
+  }
+
+  closeScheduleModal() {
+    this.isScheduleModalOpen = false;
+  }
+
+  onScheduleSave(scheduleData: any) {
+    console.log("Schedule saved:", scheduleData);
+    this.closeScheduleModal();
+  }
 }
