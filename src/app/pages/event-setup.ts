@@ -2653,6 +2653,20 @@ export class EventSetupComponent implements OnInit {
     this.isDeleteModalOpen = true;
   }
 
+  getFilteredExhibitors(): Exhibitor[] {
+    if (!this.searchQuery.trim()) {
+      return this.exhibitors;
+    }
+    const query = this.searchQuery.toLowerCase().trim();
+    return this.exhibitors.filter(
+      (exhibitor) =>
+        exhibitor.companyName.toLowerCase().includes(query) ||
+        exhibitor.hallNo.toLowerCase().includes(query) ||
+        exhibitor.stallNo.toLowerCase().includes(query) ||
+        exhibitor.registrationCode.toLowerCase().includes(query),
+    );
+  }
+
   formatDate(dateString: string): string {
     if (!dateString) return "";
     const date = new Date(dateString);
