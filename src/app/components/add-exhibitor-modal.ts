@@ -57,7 +57,7 @@ import { FormsModule } from "@angular/forms";
         </div>
 
         <!-- Modal Body -->
-        <form class="px-[25px] py-6" (ngSubmit)="onSubmit()">
+        <form class="px-5 py-6" (ngSubmit)="onSubmit()">
           <!-- Profile Upload -->
           <div class="flex justify-center mb-8">
             <div class="relative">
