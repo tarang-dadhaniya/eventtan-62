@@ -11,6 +11,8 @@ export interface Event {
   lastModifiedBy: string;
   totalVisitor: string;
   status: string;
+  aboutTitle?: string;
+  aboutDescription?: string;
 }
 
 @Injectable({
