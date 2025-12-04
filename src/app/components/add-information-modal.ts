@@ -17,7 +17,7 @@ import { FormsModule } from "@angular/forms";
         (click)="$event.stopPropagation()"
       >
         <!-- Header -->
-        <div class="flex items-center justify-between px-[30px] py-[30px] flex-shrink-0">
+        <div class="flex items-center justify-between px-[20px] py-[16px] flex-shrink-0">
           <h2 class="text-[22px] font-medium text-[#3F4254]">
             Add Information
           </h2>
@@ -53,7 +53,7 @@ import { FormsModule } from "@angular/forms";
         </div>
 
         <!-- Scrollable Body -->
-        <div class="flex-1 overflow-y-auto px-[26px] pb-6">
+        <div class="flex-1 overflow-y-auto px-[20px] pb-6">
           <div class="space-y-[30px]">
             <!-- Profile Image Upload -->
             <div class="flex justify-center">
