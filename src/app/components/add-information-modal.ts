@@ -90,7 +90,7 @@ import { FormsModule } from "@angular/forms";
                 </div>
                 <button
                   type="button"
-                  class="absolute bottom-0 right-0 w-6 h-6 rounded-full bg-[#009FD8] flex items-center justify-center shadow-md hover:bg-[#0385b5] transition-colors"
+                  class="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-[#009FD8] flex items-center justify-center shadow-md hover:bg-[#0385b5] transition-colors"
                   (click)="profileImageInput.click()"
                 >
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
