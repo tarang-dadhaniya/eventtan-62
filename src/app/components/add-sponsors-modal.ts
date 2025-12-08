@@ -178,7 +178,7 @@ import { FormsModule } from "@angular/forms";
                     class="w-full h-[50px] px-5 pr-10 border-2 border-[#E9EBEC] rounded text-base focus:outline-none focus:border-[#009FD8] appearance-none bg-white transition-colors"
                     [ngClass]="{
                       'text-[#C2C3CB]': !formData.track,
-                      'text-[#212529]': formData.track
+                      'text-[#212529]': formData.track,
                     }"
                     required
                   >
@@ -365,7 +365,7 @@ import { FormsModule } from "@angular/forms";
                     class="w-full h-[50px] px-5 pr-10 border-2 border-[#E9EBEC] rounded text-base focus:outline-none focus:border-[#009FD8] appearance-none bg-white transition-colors"
                     [ngClass]="{
                       'text-[#C2C3CB]': !formData.sponsorsFor,
-                      'text-[#212529]': formData.sponsorsFor
+                      'text-[#212529]': formData.sponsorsFor,
                     }"
                   >
                     <option value="" disabled>Please Select</option>
