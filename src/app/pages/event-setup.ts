@@ -2300,16 +2300,16 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
                     <div class="border border-[#CED4DA] rounded bg-white">
                       <!-- Header -->
                       <div
-                        class="px-7 py-5 border-b border-[#CED4DA] bg-[#F5F5F5] rounded-t flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
+                        class="px-6 py-4 border-b border-[#CED4DA] bg-[#F5F5F5] rounded-t flex items-center justify-between gap-6"
                       >
                         <h2
-                          class="text-lg sm:text-xl text-[#686868] font-medium"
+                          class="text-xl font-medium text-[#686868] whitespace-nowrap"
                         >
                           Speakers
                         </h2>
 
                         <div
-                          class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto"
+                          class="flex-1 flex items-center justify-end gap-3"
                         >
                           <!-- Search Bar -->
                           <div class="relative w-full sm:w-[328px]">
