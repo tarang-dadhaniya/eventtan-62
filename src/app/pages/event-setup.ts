@@ -3270,6 +3270,7 @@ export class EventSetupComponent implements OnInit {
   isInformationModalOpen = false;
   isSponsorsModalOpen = false;
   isSocialMediaModalOpen = false;
+  isImageGalleryModalOpen = false;
   editAboutContent = false;
   eventId: string = "";
   schedules: Schedule[] = [];
