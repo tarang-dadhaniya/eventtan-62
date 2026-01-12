@@ -1000,7 +1000,7 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
               <!-- Event Features Tab Content -->
               <div
                 *ngIf="currentTab === 'features'"
-                class="bg-white rounded shadow-md border border-[#E9E9E9] p-4 md:p-6 lg:p-8"
+                class="bg-white rounded shadow-md border border-[#E9E9E9] p-3 sm:p-4 md:p-6 lg:p-8"
               >
                 <!-- Available Label -->
                 <h3 class="text-base font-medium text-[#686868] mb-3">
