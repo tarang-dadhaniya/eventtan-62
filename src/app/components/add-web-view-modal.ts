@@ -158,8 +158,23 @@ import { WebView } from "../services/web-view.service";
             </div>
           </div>
 
-          <!-- File Upload Area -->
-          <div class="mb-6">
+          <!-- Conditional Content Based on Type Selection -->
+
+          <!-- URL Field - Only shown when External is selected -->
+          <div *ngIf="formData.type === 'External'" class="mb-6">
+            <label class="block text-base font-medium text-[#212529] mb-2"
+              >URL</label
+            >
+            <input
+              type="url"
+              [(ngModel)]="formData.url"
+              placeholder="Enter Location"
+              class="w-full h-[50px] px-5 border-2 border-[#E9EBEC] rounded placeholder:text-[#C2C3CB] text-base focus:outline-none focus:border-[#009FD8] transition-colors"
+            />
+          </div>
+
+          <!-- File Upload Area - Only shown when Standard is selected -->
+          <div *ngIf="formData.type === 'Standard'" class="mb-6">
             <div
               class="border border-dashed border-[#B9BBBC] rounded h-[120px] flex flex-col items-center justify-center cursor-pointer hover:border-[#009FD8] transition-colors"
               (click)="fileInput.click()"
@@ -264,6 +279,7 @@ export class AddWebViewModalComponent {
     title: "",
     floorPlanFor: "",
     type: "Standard",
+    url: "",
     fileName: "",
   };
 
@@ -273,6 +289,7 @@ export class AddWebViewModalComponent {
         title: this.editingWebView.title,
         floorPlanFor: (this.editingWebView as any).floorPlanFor || "",
         type: this.editingWebView.type,
+        url: (this.editingWebView as any).url || "",
         fileName: (this.editingWebView as any).fileName || "",
       };
     } else {
@@ -299,6 +316,7 @@ export class AddWebViewModalComponent {
   }
 
   onSave() {
+    // Validate common fields
     if (!this.formData.title.trim()) {
       alert("Please enter a title");
       return;
@@ -312,11 +330,26 @@ export class AddWebViewModalComponent {
       return;
     }
 
+    // Validate type-specific fields
+    if (this.formData.type === "External") {
+      if (!this.formData.url.trim()) {
+        alert("Please enter a URL for External type");
+        return;
+      }
+    } else if (this.formData.type === "Standard") {
+      // For Standard, file is optional but you can add validation if needed
+      // if (!this.formData.fileName) {
+      //   alert("Please upload a file for Standard type");
+      //   return;
+      // }
+    }
+
     const webViewData = {
       title: this.formData.title,
       floorPlanFor: this.formData.floorPlanFor,
       type: this.formData.type,
-      fileName: this.formData.fileName,
+      url: this.formData.type === "External" ? this.formData.url : "",
+      fileName: this.formData.type === "Standard" ? this.formData.fileName : "",
       // Keep the floorPlanTypes for backward compatibility
       floorPlanTypes: ["mobile", "desktop"],
     };
@@ -330,6 +363,7 @@ export class AddWebViewModalComponent {
       title: "",
       floorPlanFor: "",
       type: "Standard",
+      url: "",
       fileName: "",
     };
   }
