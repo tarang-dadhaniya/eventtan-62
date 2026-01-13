@@ -7,6 +7,9 @@ export interface WebView {
   title: string;
   type: string;
   floorPlanTypes: string[]; // Can have multiple: mobile, desktop, or both
+  floorPlanFor?: string; // Floor plan location/area
+  fileName?: string; // Uploaded file name (for Standard type)
+  url?: string; // URL (for External type)
 }
 
 @Injectable({
