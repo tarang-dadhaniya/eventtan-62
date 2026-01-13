@@ -4994,6 +4994,23 @@ export class EventSetupComponent implements OnInit {
     this.isDeleteModalOpen = true;
   }
 
+  // Floor Plan methods (aliases to Information methods)
+  openFloorPlanModal() {
+    this.openInformationModal();
+  }
+
+  closeFloorPlanModal() {
+    this.closeInformationModal();
+  }
+
+  editFloorPlan(info: Information) {
+    this.editInformation(info);
+  }
+
+  deleteFloorPlan(id: string) {
+    this.deleteInformation(id);
+  }
+
   getInitials(name: string): string {
     if (!name) return "";
     const parts = name.split(" ");
