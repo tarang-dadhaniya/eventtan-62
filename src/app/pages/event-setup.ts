@@ -1369,7 +1369,7 @@ const EVENT_OVERVIEW_ICON = `<svg width="22" height="22" viewBox="0 0 22 22" fil
                     <button
                       *ngFor="let featureId of activeFeatures; let i = index"
                       [class.active-feature-tab]="i === selectedFeatureIndex"
-                      (click)="selectFeature(i)"
+                      (click)="selectedFeatureIndex = i"
                       class="flex items-center gap-2 px-4 py-2.5 rounded border transition-all font-medium text-sm md:text-base"
                       [ngClass]="{
                         'bg-[#009FD8] text-white border-[#009FD8] shadow-md':
